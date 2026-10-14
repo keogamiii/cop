@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON WAVE — сведение и мастеринг</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Анимированный тёмный фон -->
+  <div class="bg">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="dashboard">
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="nav">
+      <button class="nav-btn active" data-page="page-home">🏠 Главная</button>
+      <button class="nav-btn" data-page="page-cases">🔊 Примеры</button>
+      <button class="nav-btn" data-page="page-rates">🎧 Тарифы</button>
+      <button class="nav-btn" data-page="page-terms">📋 Условия</button>
+      <button class="nav-btn" data-page="page-video">🎬 Видео</button>
+    </nav>
+
+    <!-- ГЛАВНАЯ -->
+    <section id="page-home" class="page active">
+      <span class="badge">NEON WAVE / SOUND</span>
+      <h1>Звук, который бьёт точно в цель.</h1>
+      <p class="desc">
+        Профессиональное сведение и мастеринг под ключ. Живой, плотный и громкий микс,
+        который не стыдно поставить рядом с любым релизом.
+      </p>
+
+      <div class="quote">
+        <p>Каждый трек — это хирургическая точность и <strong>плотный</strong> баланс.
+        Не продаю громкие имена — продаю звук, который готов <strong>рвать</strong>.</p>
+      </div>
+
+      <div class="status">
+        <span class="dot pulse"></span>
+        <span class="status-text">Статус:
+          <span class="status-value">Принимаю заказы</span>
+        </span>
+      </div>
+
+      <div class="socials">
+        <span class="socials-title">Соцсети:</span>
+        <a href="#" class="social-link" title="Telegram" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </a>
+        <a href="#" class="social-link" title="VK" aria-label="VK">
+          <svg viewBox="0 0 24 24"><path d="M13.16 18.5c-6.02 0-9.66-4.2-9.8-11.16h3.18c.1 5.14 2.42 7.3 4.18 7.76V7.34h3.05v4.34c1.72-.18 3.5-2.16 4.1-4.34h3.02c-.46 2.68-2.4 4.66-3.78 5.44 1.38.64 3.6 2.36 4.44 5.72h-3.32c-.66-2.06-2.3-3.66-4.46-3.86v3.86h-.61z"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ПРИМЕРЫ (A/B плеер) -->
+    <section id="page-cases" class="page">
+      <span class="badge">NEON WAVE / CASES</span>
+      <h1>🔊 Анатомия звука: ДО / ПОСЛЕ</h1>
+      <p class="desc">Включай демо и переключай «ДО / ПОСЛЕ» прямо во время звучания — услышишь разницу.</p>
+
+      <div class="cases">
+        <article class="case-card">
+          <div class="case-title">Кейс №1 · Trap / Memphis</div>
+          <p class="case-desc"><strong>Задача:</strong> выровнять лид-вокал по таймингу, расширить стерео, собрать плотную нижнюю середину и бас, спрятать даблы в глубину микса.</p>
+
+          <div class="ab-player" data-mode="before">
+            <div class="ab-controls">
+              <button class="play-btn" type="button">▶ ПОГНАЛИ</button>
+              <div class="ab-switch">
+                <button class="ab-tab active" type="button" data-mode="before">ДО</button>
+                <button class="ab-tab" type="button" data-mode="after">ПОСЛЕ 🔥</button>
+              </div>
+            </div>
+            <div class="progress"><div class="progress-fill"></div></div>
+            <div class="time">0:00 / 0:00</div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-title">Кейс №2 · Hip-Hop / Boom bap</div>
+          <p class="case-desc"><strong>Задача:</strong> вернуть атаку барабанам, убрать мутность, сделать вокал разборчивым, добавить ламповую теплоту на мастере.</p>
+
+          <div class="ab-player" data-mode="before">
+            <div class="ab-controls">
+              <button class="play-btn" type="button">▶ ПОГНАЛИ</button>
+              <div class="ab-switch">
+                <button class="ab-tab active" type="button" data-mode="before">ДО</button>
+                <button class="ab-tab" type="button" data-mode="after">ПОСЛЕ 🔥</button>
+              </div>
+            </div>
+            <div class="progress"><div class="progress-fill"></div></div>
+            <div class="time">0:00 / 0:00</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ТАРИФЫ -->
+    <section id="page-rates" class="page">
+      <span class="badge">NEON WAVE / PRICING</span>
+      <h1>🎧 Тарифы на сведение</h1>
+
+      <div class="rates">
+        <article class="rate-card tier-start">
+          <header class="rate-head">
+            <div class="rate-price">1 000 ₽</div>
+            <div class="rate-name">START</div>
+            <div class="rate-time">⏳ до 6 дней</div>
+          </header>
+          <ul class="features">
+            <li class="active">▷ Чистка вокала (шум, клики, вздохи)</li>
+            <li class="active">🎵 Тюнинг (Auto-Tune)</li>
+            <li class="active">🎛️ Частотный баланс</li>
+            <li class="active">▷ Динамика микса</li>
+            <li class="disabled">❌ Саунд-дизайн и дропы</li>
+            <li class="disabled">❌ Сведение фитов</li>
+            <li class="revisions">🎯 Правки до 2 шт.</li>
+          </ul>
+          <button class="order-btn" type="button" data-pack="START" data-price="600 ₽">Заказать</button>
+        </article>
+
+        <article class="rate-card tier-pro">
+          <header class="rate-head">
+            <div class="rate-price">1 500 ₽</div>
+            <div class="rate-name">PRO</div>
+            <div class="rate-time">⏳ до 7 дней</div>
+          </header>
+          <ul class="features">
+            <li class="active">▷ Чистка вокала</li>
+            <li class="active">🎵 Ручной тюнинг вокала</li>
+            <li class="active">🎛️ Частотный баланс</li>
+            <li class="active">▷ Динамика микса</li>
+            <li class="active">🌋 Насыщение и гармоники</li>
+            <li class="active">⚡ Саунд-дизайн (эффекты, дропы)</li>
+            <li class="disabled">❌ Сведение фитов</li>
+            <li class="revisions">🎯 Правки до 4 шт.</li>
+          </ul>
+          <button class="order-btn" type="button" data-pack="PRO" data-price="800 ₽">Заказать</button>
+        </article>
+
+        <article class="rate-card tier-max">
+          <header class="rate-head">
+            <div class="rate-price">2 000 ₽</div>
+            <div class="rate-name">MAX</div>
+            <div class="rate-time">⏳ до 9 дней</div>
+          </header>
+          <ul class="features">
+            <li class="active">▷ Чистка вокала</li>
+            <li class="active">🎵 Ручной тюнинг вокала</li>
+            <li class="active">🎛️ Частотный баланс</li>
+            <li class="active">🌋 Насыщение и гармоники</li>
+            <li class="active">⚡ Саунд-дизайн</li>
+            <li class="active">👥 Сведение фитов</li>
+            <li class="active">🎼 Сведение по дорожкам (Multitrack)</li>
+            <li class="revisions">🎯 Правки без лимита (∞)</li>
+          </ul>
+          <button class="order-btn" type="button" data-pack="MAX" data-price="1 000 ₽">Заказать</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- УСЛОВИЯ -->
+    <section id="page-terms" class="page">
+      <span class="badge">NEON WAVE / TERMS</span>
+      <h1>📋 Условия сотрудничества</h1>
+
+      <div class="sub-tabs">
+        <button class="sub-tab active" type="button" data-sub="sub-tech">🔴 Требования к проекту</button>
+        <button class="sub-tab" type="button" data-sub="sub-pay">💳 Оплата и правки</button>
+      </div>
+
+      <div id="sub-tech" class="sub-page active">
+        <div class="terms-card">
+          <div class="terms-head">🔉 Частота и разрядность</div>
+          <p class="terms-text">Рекомендуем <strong>44.1 кГц / 24 бита</strong> (минимум — 44.1 кГц / 16 бит).</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">🔈 Формат дорожек</div>
+          <p class="terms-text">Все дорожки — в <strong>WAV</strong>. Если инструментал был в MP3, оставляй исходное качество.</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">▶️ Начало дорожек</div>
+          <p class="terms-text">Все дорожки начинаются строго с <strong>0-й секунды</strong> — так проще выравнивать.</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">🗣 Запас по громкости (Headroom)</div>
+          <p class="terms-text">Пиковый уровень — <strong>не выше −6 дБFS</strong>, чтобы ничего не клипповало.</p>
+        </div>
+      </div>
+
+      <div id="sub-pay" class="sub-page">
+        <div class="terms-card accent">
+          <div class="terms-head">⚖️ Автоматическое согласие</div>
+          <p class="terms-text">Нажимая «Подтвердить заказ», ты принимаешь условия сотрудничества в полном объёме.</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">🎧 Контрольное демо</div>
+          <p class="terms-text">Сначала высылается короткое демо <strong>25–30 секунд</strong> в MP3. Полные версии — после оплаты.</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">💰 Передача полных версий</div>
+          <p class="terms-text">После оплаты отправляются ссылки на <strong>WAV 24 бита</strong> и <strong>MP3 320 кбит/с</strong>.</p>
+        </div>
+        <div class="terms-card">
+          <div class="terms-head">⏱️ Регламент правок</div>
+          <p class="terms-text">На прослушивание микса даётся <strong>3 календарных дня</strong>. Нет ответа — проект закрывается.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВИДЕО -->
+    <section id="page-video" class="page">
+      <span class="badge">NEON WAVE / MEDIA</span>
+      <h1>🎬 Видео</h1>
+      <p class="desc">Раздел в разработке.</p>
+    </section>
+
+  </div>
+
+  <!-- МОДАЛЬНОЕ ОКНО ЗАКАЗА -->
+  <div id="modal" class="modal-overlay">
+    <div class="modal">
+      <button id="modal-close" class="modal-close" type="button" aria-label="Закрыть">×</button>
+      <h2>Заказ: <span id="modal-pack">ПАК</span></h2>
+
+      <form id="order-form">
+        <input type="hidden" id="form-pack">
+
+        <div class="field">
+          <label for="f-name">Имя / ник</label>
+          <input id="f-name" class="input" type="text" placeholder="Как к тебе обращаться?" required>
+        </div>
+
+        <div class="field">
+          <label for="f-contact">Контакт (TG / VK)</label>
+          <input id="f-contact" class="input" type="text" placeholder="@nickname" required>
+        </div>
+
+        <div class="field">
+          <label for="f-ref">Референс (ссылка)</label>
+          <input id="f-ref" class="input" type="text" placeholder="Трек, на который хочешь ориентироваться">
+        </div>
+
+        <div class="field">
+          <label for="f-comment">Комментарий</label>
+          <textarea id="f-comment" class="input" rows="3" placeholder="Что важно учесть?"></textarea>
+        </div>
+
+        <div class="consent">
+          <label class="switch">
+            <input type="checkbox" id="consent">
+            <span class="slider"></span>
+          </label>
+          <span class="consent-text">Согласен с условиями сотрудничества</span>
+        </div>
+
+        <button id="submit-btn" class="submit-btn disabled" type="submit" disabled>Подтвердить заказ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- АНИМАЦИЯ «ВЗРЫВ» ПРИ ОТПРАВКЕ -->
+  <div id="boom" class="boom">
+    <div class="boom-core"></div>
+    <div class="boom-wave"></div>
+    <span class="boom-p p1"></span>
+    <span class="boom-p p2"></span>
+    <span class="boom-p p3"></span>
+    <span class="boom-p p4"></span>
+    <span class="boom-p p5"></span>
+    <span class="boom-p p6"></span>
+    <div class="boom-text">ЗАКАЗ ПРИНЯТ 🔥</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
